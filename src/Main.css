@@ -60,6 +60,17 @@
     font-size:20px;
     place-self:end end;
 }
+.navLink_sT{
+    text-decoration: none;
+    color:#9B9A9A;
+}
+.hrStyle{
+    border:none;
+    height: 1px;
+    background-color: #C4C4C4;
+    margin-top:0em;
+    margin-bottom: 0em;
+}
 /*main content css*/
 .mainContainer{
     display:grid;
@@ -80,16 +91,9 @@
     width: auto;
     background: #000000;
 }
-
-.navEle1{
-    grid-row:2/3;
-    grid-column: 2/3;
-    align-self: center center;
+.navLink_nE{
+    text-decoration: none;
     color:white;
-    font-size:20px;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
 }
 .navEle{
     grid-row:2/3;
@@ -210,11 +214,131 @@
     font-style:normal;
     border-radius: 5px;
 }
-.hrStyle{
-    border:none;
-    height: 1px;
-    background-color: #C4C4C4;
-    margin-top:0em;
-    margin-bottom: 0em;
+
+
+/*my page style*/
+.myPageContainer{
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-column: 1/4;
+    grid-row:1/4;
 }
 
+.myCategory1{
+    grid-column: 3/5;
+    grid-row: 3/4;
+    font-size: 20px;
+    font-style: normal;
+    place-self: center start;
+}
+.myCategory2{
+    grid-column: 3/5;
+    grid-row: 4/5;
+    font-size: 20px;
+    font-style: normal;
+    place-self: center start;
+}
+.myHr{
+    border:none;
+    height: 100%;
+    width: 1px;
+    background-color: #B9B7B7;
+    margin-right: 0em;
+    margin-left: 0em;
+    grid-column: 5/6;
+    grid-row: 2/10;
+    place-self: center start;
+}
+
+.myContentContainer{
+    grid-column: 6/17;
+    grid-row:1/11;
+    display:grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+.myProperty{
+    font-size: 17px;
+    font-style: normal;
+    place-self: center start;
+    grid-column: 1/2;
+}
+.myPropertyPosition1{
+    grid-row: 3/4;
+}
+.myPropertyPosition2{
+    grid-row: 4/5;
+}
+.myPropertyPosition3{
+    grid-row: 5/6;
+}
+.myPropertyPosition4{
+    grid-row: 6/7;
+}
+.myValue{
+    place-self: center stretch;
+    grid-column: 3/6;
+    font-size: 17px;
+    background: #FCFBFB;
+    border-color: #999999;
+    border-radius: 5px;
+    border-style: solid;
+}
+.mySelected{
+    font-weight: bold;
+    color:black;
+}
+.myNotSelected{
+    color:#929292;
+}
+.manageTitle1{
+        grid-column: 1/12;
+        grid-row:2/3;
+        place-self: end start;
+        font-size: 30px;
+        font-style:normal;
+        font-weight: bold;
+}
+.manageTitle2{
+    grid-column: 1/12;
+    grid-row:6/7;
+    place-self: end start;
+    font-size: 30px;
+    font-style:normal;
+    font-weight: bold;
+}
+.manageHr{
+    border:none;
+    height: 1px;
+    width: 82%;
+    background-color: black;
+    margin-top:0em;
+    margin-bottom: 0em;
+    grid-column: 1/12;
+    z-index:10;
+}
+.manageHr1{
+    grid-row:3/4;
+}
+.manageHr2{
+    grid-row:6/7;
+}
+.manageHr3{
+    grid-row:7/8;
+}
+.manageHr4{
+    grid-row:10/11;
+}
+.manageText{
+    overflow-y: scroll;
+    grid-column: 1/10;
+    grid-row:3/6;
+    /* background: yellow; */
+}
+.manageReple{    
+    overflow-y: scroll;
+    grid-column: 1/10;
+    grid-row:7/10;
+    /* background: yellow; */
+}
